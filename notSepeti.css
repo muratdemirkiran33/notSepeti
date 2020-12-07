@@ -1,0 +1,118 @@
+:root {
+    --anaRenk: rgb(43, 218, 241);
+    --ikinciRenk: rgb(43, 145, 241);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nerko One", cursive;
+}
+body:before {
+    z-index: -5;
+    content: "";
+    background-image: linear-gradient(to bottom right, var(--anaRenk), var(--ikinciRenk));
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 2rem;
+    color: whitesmoke;
+}
+.veriAl {
+    display: flex;
+    justify-content: center;
+}
+.veriAl-item {
+    font-family: "Nerko One", cursive;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    margin: 0;
+    background-color: whitesmoke;
+}
+input::-moz-placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+input:-ms-input-placeholder {
+    color: #bbb;
+}
+input::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.fa-plus-square {
+    color: var(--ikinciRenk);
+}
+
+button.veriAl-item:hover {
+    background-color: rgb(219, 230, 235);
+    color: whitesmoke;
+}
+button,
+i {
+    cursor: pointer;
+}
+
+.gorev {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    max-width: 70%;
+    padding-left: 1rem;
+}
+
+.gorevtamamlandi > li {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.gorev{
+    transition: .5s ease-in-out;
+    
+}
+.gorev > li {
+    transition: .5s ease-in-out;
+}
+.liste {
+    list-style-type: none;
+    text-align: center;
+
+    margin: auto 0;
+}
+.fa-check-square {
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: var(--anaRenk);
+}
+.fa-check-square:hover {
+    background-color: rgba(43, 218, 241, 0.61);
+}
+.fa-trash {
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgb(245, 48, 48);
+}
+.fa-trash:hover {
+    background-color: rgba(255, 0, 0, 0.61);
+}
+.simge {
+    display: flex;
+    justify-content: left;
+}
+.kaybol{
+    transform: scale(0);
+    
+}
